@@ -1,4 +1,4 @@
-{% set version = '1.2.0' %}
+{% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/iccbeta_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/iccbeta/iccbeta_{{ version }}.tar.gz
-  sha256: 53c9df09907b3af47399acc7cd4063867fc5f803964038e452fdad8b110bba0e
+  sha256: 9d866aec0a5ddea068610ba8a3af444482d2801143cfbd82770155137606e12b
 
 build:
-  number: 4
+  number: 0
 
   rpaths:
     - lib/R/lib/
@@ -54,10 +54,7 @@ about:
   home: https://github.com/tmsalab/iccbeta
 
   license: GPL-2.0-or-later
-  summary: A function and vignettes for computing an intraclass correlation described in Aguinis
-    & Culpepper (2015) <doi:10.1177/1094428114563618>. This package quantifies the share
-    of variance in a dependent variable that is attributed to group heterogeneity in
-    slopes.
+  summary: A function and vignettes for computing an intraclass correlation described in Aguinis & Culpepper (2015) <doi:10.1177/1094428114563618>. This package quantifies the share of variance in a dependent variable that is attributed to group heterogeneity in slopes.
 
   license_family: GPL2
   license_file:
